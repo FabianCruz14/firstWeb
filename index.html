@@ -11,18 +11,21 @@
         <h1>Fabian Cruz Freelancer</h1>
     </header>
 
-    <!-- añadimos nav para agregar un menu de navegacion, a es para referenciar un link -->
+    <!-- añadimos la etiqueta nav para agregar un menu de navegacion, a (anchor) es para referenciar un link -->
     <nav>
-        <a href="#">Inicio</a>
+        <a href="#">Home</a>
         <a href="#">About Me</a>
-        <a href="#">Custumers</a>
-        <a href="#">Contacts</a>
+        <a href="#">Members</a>
+        <a href="#">Contact</a>
     </nav>
 
+    <!-- agregamos la imagen de fondo para el index principal -->
     <img src="img/hero.jpg" alt="">
 
     <section>        
         <h2>Design and Web Developer Freelancer</h2>
+        <!-- desde paginas de diseño, extraemos el linkref para pegarlo dentro de un
+        parrafo (p) en el codigo, se verá parecido a lo sig: -->
         <p>
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1" stroke="#40957f" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -32,10 +35,12 @@
         </p>
 
         <p>Huauchinango, Puebla</p>
+        <!-- agregamos un anchor (a) para el boton de contactos y con css lo volvemos un boton -->
         <a href="#">Contact</a>
     </section>
 
-
+    <!-- como el siguiente contenido se define como el contenido principal, usamos la etiqueta main para
+    seccionar esta parte del codigo -->
     <main>
         <h2>Service's</h2>
     
@@ -88,7 +93,34 @@
 
     <section>
         <h2>Contact</h2>
+
+        <form action="">
+            <!-- agregamos un fieldset que es un conjunto de forms -->
+            <fieldset>
+                <!-- incluimos un legend, basicamente le damos instrucciones al usuario sobre 
+                que hacer con el formulario -->
+                <legend>Fill in the fields to contact us </legend>
+
+                <!-- agreegamos un input para cada parte del formulario, todo esto dentro de un label
+                con el texto que necesitemos recibir del usuario -->
+                <label for="">Name:</label>
+                <input type="text" placeholder="Your name">
+
+                <label for="">Cellphone:</label>
+                <input type="tel" placeholder="Your number phone">
+
+                <label for="">E-mail:</label>
+                <input type="email" placeholder="Your email">
+
+                <label for="">Mesage</label>
+                <textarea></textarea>
+                <input type="submit" value="Send">
+
+            </fieldset>
+             
+        </form>
     </section>
+
     
     <footer>
         <p>All rights reserved. Fabian Cruz 2023</p>
