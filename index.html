@@ -95,27 +95,39 @@
         <h2>Contact</h2>
 
         <form action="">
-            <!-- agregamos un fieldset que es un conjunto de forms -->
+            <!-- agregamos un fieldset que es un conjunto de diferentes campos -->
             <fieldset>
                 <!-- incluimos un legend, basicamente le damos instrucciones al usuario sobre 
                 que hacer con el formulario -->
                 <legend>Fill in the fields to contact us </legend>
 
                 <!-- agreegamos un input para cada parte del formulario, todo esto dentro de un label
-                con el texto que necesitemos recibir del usuario -->
-                <label for="">Name:</label>
-                <input type="text" placeholder="Your name">
+                con el texto que necesitemos recibir del usuario 
+            
+                tambien, agregamos un div a cada boton para agruparlo-->
+                <div>
+                    <label for="">Name:</label>
+                    <input type="text" placeholder="Your name">
+                </div>
 
-                <label for="">Cellphone:</label>
-                <input type="tel" placeholder="Your number phone">
+                <div>                    
+                    <label for="">Cellphone:</label>
+                    <input type="tel" placeholder="Your number phone">
+                </div>
+                
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email" placeholder="Your email">
+                </div>
 
-                <label for="">E-mail:</label>
-                <input type="email" placeholder="Your email">
+                <div>
+                    <label for="">Mesage</label>
+                    <textarea></textarea>
+                </div>
 
-                <label for="">Mesage</label>
-                <textarea></textarea>
-                <input type="submit" value="Send">
-
+                <div>
+                    <input type="submit" value="Send">
+                </div>
             </fieldset>
              
         </form>
