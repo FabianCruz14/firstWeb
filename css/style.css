@@ -1,1 +1,33 @@
- 
+/* para asignar un custom propieties debemos comenzarlo con doble guion,
+seguido de la etiqueta, dos puntos (:), despues el valor del color y
+cerramos con ; */
+
+:root{
+   --blanco: #fff;
+   --oscuro: #212121;
+   --primario: #a21c1e;
+   --secunario: #955b53;
+   --gris: #757575;
+}
+
+
+/* para asignar un tamaño a nuestros textos usamos el sig codigo
+que nos ayuda a asignarlo como si fueran pixeles con la diferencia
+que los tamaños se adaptarán mejor a cualquier tipo de pantalla */
+html{
+    font-size: 62.5%;
+ }
+ body{
+   /* lo que se asigne en este codigo, funcionará para todo el sitio */
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+ /* con esto, conseguimos que 1rem = 10px */
+ }
+ .title {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--oscuro);
+ }
+ .title span{
+    font-size: 2rem; 
+ }
