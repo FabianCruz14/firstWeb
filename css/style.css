@@ -10,24 +10,48 @@ cerramos con ; */
    --gris: #757575;
 }
 
-
 /* para asignar un tamaño a nuestros textos usamos el sig codigo
 que nos ayuda a asignarlo como si fueran pixeles con la diferencia
 que los tamaños se adaptarán mejor a cualquier tipo de pantalla */
+
 html{
     font-size: 62.5%;
  }
- body{
+body{
    /* lo que se asigne en este codigo, funcionará para todo el sitio */
     font-size: 16px;
     font-family: 'Playfair Display', serif;
  /* con esto, conseguimos que 1rem = 10px */
- }
- .title {
+}
+
+.title {
     text-align: center;
     font-size: 3.8rem;
-    color: var(--oscuro);
- }
- .title span{
+   
+}
+
+.title span{
     font-size: 2rem; 
- }
+}
+
+.contenedor{
+   width: 120rem;
+   margin: 0 auto;
+}
+
+.nav-bg{ 
+   /* le asignamos un color a todo el fondo de la barra de navegacion */
+   background-color: var(--secunario);
+}
+
+.navegacion-principal{
+   /* agregamos un padding, que es la distacia que hay entre el 
+   elemento mas cercano y nosotros, pero por dentro */
+   padding: 1rem;
+}
+.navegacion-principal a{
+   /* acá usamos un selector especifico */
+   color: var(--blanco);
+   /* aca le modificamos la linea a los enlaces, en este caso no tendra nada */
+   text-decoration: none;
+}
