@@ -57,6 +57,17 @@ h1,h2,h3{
    margin: 0 auto;
 }
 
+/* creamos la clase boton y la usamos para diseñarlo */
+.boton{
+   background-color: var(--secundario);
+   color: var(--blanco);
+   padding: 1rem 3rem;
+   margin: 1rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 2rem;
+}
+
 .nav-bg{ 
    /* le asignamos un color a todo el fondo de la barra de navegacion */
    background-color: var(--primario);
@@ -72,8 +83,7 @@ h1,h2,h3{
 }
 @media (min-width: 768px) { 
    .navegacion-principal{
-      flex-direction: row;
-   }
+      flex-direction: row;}
 }
 /* acá usamos un selector especifico */
 .navegacion-principal a{
@@ -92,7 +102,7 @@ h1,h2,h3{
 }
 
 .hero{
-   background-image: url(/img/hero.jpg);
+   background-image: url(../img/hero.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -102,6 +112,7 @@ h1,h2,h3{
 
 .contenido-hero {
    position: absolute;
+   background-color: rgba(0, 0, 0, 0.1);
    width: 100%;
    height: 100%;
  
