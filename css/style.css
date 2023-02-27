@@ -63,9 +63,27 @@ h1,h2,h3{
    color: var(--blanco);
    padding: 1rem 3rem;
    margin: 1rem;
+   
+   /* usamos la sig linea para quitar las decoraciones al link */
    text-decoration: none;
+   
+   /* transformamos el contenido de boton a mayusculas con uper */
    text-transform: uppercase;
    font-size: 2rem;
+
+   /* redondeamos las esquinas del boton */
+   border-radius: .5rem;
+
+   width: 80%;
+   text-align: center;
+   align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .boton {
+      width: auto;
+    }
+   
 }
 
 .nav-bg{ 
@@ -84,6 +102,7 @@ h1,h2,h3{
 @media (min-width: 768px) { 
    .navegacion-principal{
       flex-direction: row;}
+      
 }
 /* acá usamos un selector especifico */
 .navegacion-principal a{
@@ -102,13 +121,14 @@ h1,h2,h3{
 }
 
 .hero{
-   background-image: url(../img/hero.jpg);
+   background-image: url(/img/hero.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    height: 450px;
    position: relative;
 }
+
 
 .contenido-hero {
    position: absolute;
@@ -131,6 +151,9 @@ h1,h2,h3{
    text-align: center;
    align-items: center;
 }
+
+
+
 .ubicacion{
       display: flex;
       justify-content: center;
