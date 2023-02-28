@@ -8,6 +8,7 @@ cerramos con ; */
    --blanco: #edf2fc ;
    --terceario: #488ed4;
    --gris: #a3b3c4;
+   --grisTop: #ededed;
 }
 
 /* para asignar un tamaño a nuestros textos usamos el sig codigo
@@ -24,10 +25,12 @@ html{
  }
 body{
    /* lo que se asigne en este codigo, funcionará para todo el sitio */
-    font-size: 16px;
+   /* con esto, conseguimos que 1rem = 10px */ 
+   font-size: 16px;
 
-    font-family: 'Josefin Sans', sans-serif;
-     /* con esto, conseguimos que 1rem = 10px */
+   font-family: 'Josefin Sans', sans-serif;
+   background-image: linear-gradient(to top, var(--blanco) 0%, var(--grisTop)100%);
+
 }
 
 /* design system: con esto, le asignamos un tamaño especifico y general para todo
@@ -132,7 +135,7 @@ h1,h2,h3{
 
 .contenido-hero {
    position: absolute;
-   background-color: rgba(0, 0, 0, 0.1);
+   /* background-color: rgba(0, 0, 0, 0.1); */
    width: 100%;
    height: 100%;
  
@@ -147,7 +150,7 @@ h1,h2,h3{
 .contenido-hero h2,
 .contenido-hero p{
    color: var(--oscuro);
-   text-shadow: 2px 2px 2px #edf2fc;
+   text-shadow: 2px 2px 2px var(--blanco);
    text-align: center;
    align-items: center;
 }
