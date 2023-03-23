@@ -89,10 +89,13 @@ h1,h2,h3{
    
 }
 .sombra{
-   -webkit-box-shadow: 3px 8px 17px -1px rgba(84,129,176,0.67);
-   -moz-box-shadow: 3px 8px 17px -1px rgba(84,129,176,0.67);
-   box-shadow: 3px 8px 17px -1px rgba(84,129,176,0.67);
-
+   -webkit-box-shadow: 3px 8px 17px -1px rgba(84, 129, 176, 0.67);
+      -moz-box-shadow: 3px 8px 17px -1px rgba(84, 129, 176, 0.67);
+      box-shadow: 3px 8px 17px -1px rgba(84, 129, 176, 0.67);
+      border-radius: 0px 0px 25px 25px;
+      -moz-border-radius: 0px 0px 25px 25px;
+      -webkit-border-radius: 0px 0px 25px 25px;
+      border: 0px solid #000000;
 }
 
 .nav-bg{ 
@@ -167,4 +170,9 @@ h1,h2,h3{
    display: flex;
    justify-content: center;
     align-items: center;   
+}
+
+/* my service´s */
+.servicios{
+   display: grid;
 }
