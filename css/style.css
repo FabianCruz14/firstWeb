@@ -96,6 +96,7 @@ h1,h2,h3{
       -moz-border-radius: 0px 0px 25px 25px;
       -webkit-border-radius: 0px 0px 25px 25px;
       border: 0px solid #000000;
+      border-radius: 2rem;
 }
 
 .nav-bg{ 
