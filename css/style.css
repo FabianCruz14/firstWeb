@@ -175,6 +175,9 @@ h1,h2,h3{
 
 /* my service´s */
 .servicios{
+   /* para usar grid, primero lo declaramos, posteriormente le asignamos el tanto de columnas por hacer, asi como 
+   tambien le asignamos el porcentaje de cada cuadro por asignarle, todo esto dentro del padre de los servicios */
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   /* para agregarle filas, usamos la funcion grid-template-rows:  */
 }
