@@ -176,4 +176,5 @@ h1,h2,h3{
 /* my service´s */
 .servicios{
    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
 }
