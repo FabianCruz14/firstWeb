@@ -79,9 +79,13 @@
     <main class="contenedor sombra">
         <h2>My Service's</h2>
 
+        <!-- para agregaele estilos en css y ser mas especificos, al contenedor de TODOS los servicios lo llamammos asi "servicios" -->
         <div class="servicios">
+            <!-- para trabajar con CADA UNO de los servicios (que en este caso son 3), al div lo llamamos "servicios" -->
             <section class="servicio">
+                
                 <h3>Design Web</h3>
+                <!-- igual que a los divs anteriores, para los iconos, al div se llama "iconos" -->
                 <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="44"
                         height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#edf2fc" fill="none"
@@ -135,49 +139,51 @@
                     nulla eu convallis ultrices. Duis fringilla</p>
             </section>
         </div> <!-- mi services -->
-    </main>
 
-    <section>
-        <h2>Contact</h2>
+        <section>
+            <h2>Contact</h2>
 
-        <form action="">
-            <!-- agregamos un fieldset que es un conjunto de diferentes campos -->
-            <fieldset>
-                <!-- incluimos un legend, basicamente le damos instrucciones al usuario sobre 
-                que hacer con el formulario -->
-                <legend>Fill in the fields to contact us </legend>
+            <form class="formulario">
+                <!-- agregamos un fieldset que es un conjunto de diferentes campos -->
+                <fieldset>
+                    <!-- incluimos un legend, basicamente le damos instrucciones al usuario sobre 
+                        que hacer con el formulario -->
+                    <legend>Fill in the fields to contact us </legend>
 
-                <!-- agreegamos un input para cada parte del formulario, todo esto dentro de un label
-                con el texto que necesitemos recibir del usuario 
-                
-                tambien, agregamos un div a cada boton para agruparlo-->
-                <div>
-                    <label for="">Name:</label>
-                    <input type="text" placeholder="Your name">
-                </div>
+                    <!-- agreegamos un input para cada parte del formulario, todo esto dentro de un label
+                            con el texto que necesitemos recibir del usuario 
+                            tambien, agregamos un div a cada boton para agruparlo-->
+                    <div class="contenedor-campos">
 
-                <div>
-                    <label for="">Cellphone:</label>
-                    <input type="tel" placeholder="Your number phone">
-                </div>
-
-                <div>
-                    <label for="">E-mail:</label>
-                    <input type="email" placeholder="Your email">
-                </div>
-
-                <div>
-                    <label for="">Mesage</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Send">
-                </div>
-            </fieldset>
-
-        </form>
-    </section>
+                        <div class="campos">
+                            <label>Name:</label>
+                            <input type="text" placeholder="Your name">
+                        </div>
+                        
+                        <div class="campos">
+                            <label for="">Cellphone:</label>
+                            <input type="tel" placeholder="Your number phone">
+                        </div>
+                        
+                        <div class="campos">
+                            <label for="">E-mail:</label>
+                            <input type="email" placeholder="Your email">
+                        </div>
+                        
+                        <div class="campos">
+                            <label for="">Mesage</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>                            
+                        
+                        <div>
+                            <input type="submit" value="Send">
+                        </div>
+                    </fieldset>
+                    
+                </form>
+            </section>
+        </main>
 
     <footer>
         <p>All rights reserved. Fabian Cruz 2023</p>
