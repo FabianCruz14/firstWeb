@@ -215,6 +215,7 @@ h1,h2,h3{
    align-items: center;
 }
 
+/* contac me */
 .formulario{
    background-color: var(--gris);
    width: min ( 60rem, 100% );
