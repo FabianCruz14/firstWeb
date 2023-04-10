@@ -25,7 +25,7 @@ html{
  }
 body{
    /* lo que se asigne en este codigo, funcionará para todo el sitio */
-   /* con esto, conseguimos que 1rem = 10px */ 
+   /* con esto, conseguimos que 1rem = 10px */
    font-size: 16px;
 
    font-family: 'Josefin Sans', sans-serif;
@@ -52,7 +52,7 @@ h1,h2,h3{
 
 .title span{
    text-transform: lowercase;
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
 }
 
 .contenedor{
@@ -67,10 +67,10 @@ h1,h2,h3{
    color: var(--blanco);
    padding: 1rem 3rem;
    margin: 1rem;
-   
+
    /* usamos la sig linea para quitar las decoraciones al link */
    text-decoration: none;
-   
+
    /* transformamos el contenido de boton a mayusculas con uper */
    text-transform: uppercase;
    font-size: 2rem;
@@ -83,11 +83,11 @@ h1,h2,h3{
    align-items: center;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .boton {
       width: auto;
     }
-   
+
 }
 .sombra{
    -webkit-box-shadow: 3px 8px 17px -1px rgba(84, 129, 176, 0.67);
@@ -100,23 +100,23 @@ h1,h2,h3{
       border-radius: 2rem;
 }
 
-.nav-bg{ 
+.nav-bg{
    /* le asignamos un color a todo el fondo de la barra de navegacion */
    background-color: var(--primario);
 }
 
 .navegacion-principal{
-   /* agregamos un padding, que es la distacia que hay entre el 
+   /* agregamos un padding, que es la distacia que hay entre el
    elemento mas cercano y nosotros, pero por dentro */
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
 }
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
    .navegacion-principal{
       flex-direction: row;}
-      
+
 }
 /* acá usamos un selector especifico */
 .navegacion-principal a{
@@ -149,7 +149,7 @@ h1,h2,h3{
    /* background-color: rgba(0, 0, 0, 0.1); */
    width: 100%;
    height: 100%;
- 
+
    /* con el sigueinte codigo, puedes alinear verticalmente y horizontalmente cualquier
    elemento dentro de css */
    display: flex;
@@ -171,18 +171,21 @@ h1,h2,h3{
 .ubicacion{
    display: flex;
    justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
+
 /* my service´s */
-.servicios{
-   /* para usar grid, primero lo declaramos, posteriormente le asignamos el tanto de columnas por hacer, asi como 
-   tambien le asignamos el porcentaje de cada cuadro por asignarle, todo esto dentro del padre de los servicios */
-   display: grid;
-   /* para agregarle filas, usamos la funcion grid-template-rows:  */
-   grid-template-columns: 1fr 1fr 1fr;
-   /* agregamos espacio entre cada espacio designado con el grid, lo hacemos con column-gap: ; */
-   column-gap: 1rem;
+@media (min-width: 768px) {
+   .servicios{
+      /* para usar grid, primero lo declaramos, posteriormente le asignamos el tanto de columnas por hacer, asi como
+      tambien le asignamos el porcentaje de cada cuadro por asignarle, todo esto dentro del padre de los servicios */
+      display: grid;
+      /* para agregarle filas, usamos la funcion grid-template-rows:  */
+      grid-template-columns: 1fr 1fr 1fr;
+      /* agregamos espacio entre cada espacio designado con el grid, lo hacemos con column-gap: ; */
+      column-gap: 1rem;
+   }   
 }
 .servicio{
    display: flex;
@@ -230,4 +233,10 @@ h1,h2,h3{
    font-weight: 700;
    margin-bottom: 1rem;
    color: var(--primario)
+}
+
+
+/* footer */
+.footer{
+   text-align: center;
 }
