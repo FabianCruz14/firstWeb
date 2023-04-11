@@ -246,13 +246,15 @@ h1,h2,h3{
 }
 
 /* contac me */
+
 .formulario{
    background-color: var(--gris);
-   width: 55%;
+   width: min( 60rem, 100% );
    margin: 0 auto;
    padding: 2rem;
    border-radius: 1rem;
 }
+
 
 .formulario fieldset{
    border: none;
