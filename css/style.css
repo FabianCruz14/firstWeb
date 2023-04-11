@@ -231,6 +231,7 @@ h1,h2,h3{
 }
 .servicio p{
    line-height: 2;
+   text-align: center;
 }
 
 .servicio .iconos{
