@@ -63,7 +63,7 @@ h1,h2,h3{
 }
 
 .contenedor{
-   max-width: 120rem;
+   width: 70%;
    margin: 0 auto;
    padding: 2rem;
    border-radius: 2rem;
@@ -74,7 +74,7 @@ h1,h2,h3{
    background-color: var(--secundario);
    color: var(--blanco);
    padding: 1rem 3rem;
-   margin:2rem;
+   margin-top:2rem;
 
    /* usamos la sig linea para quitar las decoraciones al link */
    text-decoration: none;
@@ -88,8 +88,8 @@ h1,h2,h3{
 
    /* width: 80%; */
    text-align: center;
-   align-items: center;
    border: none;
+   width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -145,7 +145,8 @@ h1,h2,h3{
 }
 @media (min-width: 768px) {
    .navegacion-principal{
-      flex-direction: row;}
+      flex-direction: row;
+   }
 
 }
 /* acá usamos un selector especifico */
@@ -203,6 +204,7 @@ h1,h2,h3{
    justify-content: center;
     align-items: center;
 }
+
 /* my service´s */
 @media (min-width: 768px) {
    .servicios{
@@ -246,11 +248,12 @@ h1,h2,h3{
 /* contac me */
 .formulario{
    background-color: var(--gris);
-   width: 60rem;
+   width: 55%;
    margin: 0 auto;
    padding: 2rem;
    border-radius: 1rem;
 }
+
 .formulario fieldset{
    border: none;
 }
@@ -287,8 +290,8 @@ h1,h2,h3{
 
 }
 .campo textarea{
-   height: 18rem;
-   margin-bottom: 3rem;
+   height: 18 rem;
+   margin-bottom: 1rem;
 }
 
 .input-text{
