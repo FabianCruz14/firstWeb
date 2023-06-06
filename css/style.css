@@ -220,7 +220,7 @@ h1,h2,h3{
 .servicio{
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content:flex-start;
    align-items: center;
 
 }
@@ -232,6 +232,10 @@ h1,h2,h3{
 .servicio p{
    line-height: 2;
    text-align: center;
+}
+ul{
+   text-align: center;
+   justify-content: center;
 }
 
 .servicio .iconos{
