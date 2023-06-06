@@ -230,13 +230,17 @@ h1,h2,h3{
 
 }
 .servicio p{
-   line-height: 2;
+   line-height: 1.6;
    text-align: center;
 }
 ul{
    text-align: center;
    justify-content: center;
 }
+li{
+   line-height: 1.6;
+}
+
 
 .servicio .iconos{
    height: 12rem;
