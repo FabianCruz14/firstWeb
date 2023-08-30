@@ -48,7 +48,8 @@ body {
 /* design system: con esto, le asignamos un tamaño especifico y general para todo
 el proyecto en forma general.
 tambien aplica para centrarlos, moverlos o colocarlos donde deseemos */
-h1 {
+h1,
+.title-sh h1 {
    font-size: 3.8rem;
    text-transform: capitalize;
 }
@@ -60,6 +61,7 @@ h2 {
 h3 {
    font-size: 1.8rem;
 }
+
 
 h1,
 h2,
@@ -121,7 +123,7 @@ h3 {
    -moz-border-radius: 0px 0px 25px 25px;
    -webkit-border-radius: 0px 0px 25px 25px;
    border: 0px solid #000000;
-   border-radius: 2rem;
+   border-radius: .5rem;
 }
 
 /* utilidades */
@@ -343,4 +345,34 @@ li {
 /* footer */
 .footer {
    text-align: center;
+}
+
+
+/* superheroe style.css */
+.container {
+   max-width: 800px;
+}
+
+.card {
+   border: none;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+   font-size: 1.25rem;
+   margin-bottom: 0.5rem;
+}
+
+.card-text {
+   font-size: 0.875rem;
+   color: #6c757d;
+}
+
+.title-sh h1 {
+   margin: .67em 0;
+}
+
+.titulo h2 {
+   text-align: start;
+   text-transform: capitalize;
 }

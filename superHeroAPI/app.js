@@ -1,26 +1,38 @@
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
-    displayHeroInfo(); // Llamamos a la función para mostrar la información del superhéroe al cargar la página
-});
 
-function displayHeroInfo() {
-    const heroId = 69; // ID predefinido del superhéroe (por ejemplo, Superman)
-    const heroCard = document.getElementById("heroCard");
+function searchSuperhero() {
+    const searchInput = document.getElementById("searchInput").value;
+    const resultsContainer = document.getElementById("results");
+    resultsContainer.innerHTML = "";
 
-    fetch(`https://superheroapi.com/api/3161326367507697/${heroId}`)
-        .then(response => response.json())
-        .then(hero => {
-            heroCard.innerHTML = `
-                <div class="card">
-                    <img src="${hero.image.url}" class="card-img-top" alt="${hero.name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${hero.name}</h5>
-                        <p class="card-text">Publisher: ${hero.biography.publisher}</p>
-                    </div>
+    // Simulamos la respuesta de la API con datos de ejemplo
+    const exampleResponse = {
+        results: [
+            {
+                name: "Superman",
+                image: {
+                    url: "https://example.com/superman.jpg"
+                },
+                biography: {
+                    publisher: "DC Comics"
+                }
+            }
+        ]
+    };
+
+    const heroes = exampleResponse.results;
+
+    heroes.forEach(hero => {
+        const heroCard = document.createElement("div");
+        heroCard.classList.add("col-md-4", "mb-4");
+        heroCard.innerHTML = `
+            <div class="card">
+                <img src="${hero.image.url}" class="card-img-top" alt="${hero.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${hero.name}</h5>
+                    <p class="card-text">Publisher: ${hero.biography.publisher}</p>
                 </div>
-            `;
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
-        });
+            </div>
+        `;
+        resultsContainer.appendChild(heroCard);
+    });
 }
