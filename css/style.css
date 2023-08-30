@@ -376,3 +376,8 @@ li {
    text-align: start;
    text-transform: capitalize;
 }
+
+.titulo .boton {
+   font-size: .7em;
+   margin-top: .67rem;
+}
