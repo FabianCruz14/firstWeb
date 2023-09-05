@@ -1,38 +1,70 @@
+// we use DOM to interact whit a html doc
+const allTabsInfo = document.querySelectorAll('.tab-info')
+const allTabsHead = document.querySelectorAll('.tab')
+const searchInput = document.querySelector('.input-text')
+const searchButton = document.querySelector('.boton')
 
-function searchSuperhero() {
-    const searchInput = document.getElementById("searchInput").value;
-    const resultsContainer = document.getElementById("results");
-    resultsContainer.innerHTML = "";
+const superHeroeList = document.querySelector('.sh-list')
 
-    // Simulamos la respuesta de la API con datos de ejemplo
-    const exampleResponse = {
-        results: [
-            {
-                name: "Superman",
-                image: {
-                    url: "https://example.com/superman.jpg"
-                },
-                biography: {
-                    publisher: "DC Comics"
-                }
+// creamos una funcion llamada buscar super heroes
+function searchSuperHeroes(query) {
+    fetch(`https://superheroapi.com/api/3161326367507697/search${query}`)
+        .then(res => res.json())
+        .then(data => {
+            superHeroeList.innerHTML = ''
+            if (data.response == 'error') {
+                superHeroeList.innerHTML = `<p>Superheroes not found</p>`
+            } else {
+                data.forEach(heroe => {
+                    const heroeCard = document.createElement('div')
+                    heroeCard.classList.add('heroe-card')
+                    heroeCard.innerHTML = `
+                    <h2>${superhero.name}</h2>
+                    <p>Full Name: ${superhero.biography['full-name']}</p>
+                    <p>Series: ${superhero.biography['publisher']}</p>
+                    <img src='${superhero.image.url}' height="200px" width="150px"/>
+                    `
+                });
+                superHeroeList.appendChild(heroeCard)
             }
-        ]
-    };
-
-    const heroes = exampleResponse.results;
-
-    heroes.forEach(hero => {
-        const heroCard = document.createElement("div");
-        heroCard.classList.add("col-md-4", "mb-4");
-        heroCard.innerHTML = `
-            <div class="card">
-                <img src="${hero.image.url}" class="card-img-top" alt="${hero.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${hero.name}</h5>
-                    <p class="card-text">Publisher: ${hero.biography.publisher}</p>
-                </div>
-            </div>
-        `;
-        resultsContainer.appendChild(heroCard);
-    });
+        })
 }
+
+searchButton.addEventListener('click', function () {
+    const countryText = searchInput.value.trim()
+
+    if (countryText.length > 2) {
+        searchCountries(countryText)
+    } else {
+        countryList.innerHTML = `<p>Enter at least 3 characters to search </p>`
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//we created a event in a buton to search
+searchButton.addEventListener('click', function () {
+    const shText = searchInput.value.trim()
+
+    if (shText.length > 2) {
+        search
+    }
+})

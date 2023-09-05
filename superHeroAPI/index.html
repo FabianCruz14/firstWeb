@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- para normalizar nuestro diseño para usarlo con cualquier navegador, hay un hack;
-        usamos normailze para conseguir esto... creamos otro archivo css y pegamos todo el contenito -->
-    <link rel="stylesheet" href="css/normalize.css">
+            usamos normailze para conseguir esto... creamos otro archivo css y pegamos todo el contenito -->
+    <link rel="stylesheet" href="/css/normalize.css">
 
 
     <!-- agregamos la fuente para las letras, que fue extraida de google fonts
-        en este caso, se debe pegar el codigo del link que sale y el codigo de css  en la hoja de estilos -->
+            en este caso, se debe pegar el codigo del link que sale y el codigo de css  en la hoja de estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
     <!-- para hacer que nuestra hoja de estilos se cargue más rapido, añadimos este codigo: -->
-    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="/css/style.css" as="style">
     <!-- usamos un link para referenciar el estilo de esta pagina -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -31,19 +31,135 @@
         <div class="title-sh">
             <h1 class="title">Fabián Cruz <span>freelancer</span> </h1>
         </div>
-
-
-        <main class="contenedor sombra">
-            <div class="titulo">
-                <h2 class="sh">
-                    superHero.
-                </h2>
-                <input type="text" class="input-text" placeholder="Serch your favorite superheroe...">
-                <button class="boton"> search</button>
-            </div>
-            <div class="country-list"></div>
-        </main>
     </header>
+
+    <!-- agregamos todo el main a la clase sombra que ya teniamos establecida  -->
+    <main class="contenedor sombra">
+        <!-- añadimos el titulo al buscador -->
+        <div class="titulo">
+            <h2 class="sh">
+                superHeroe search.
+            </h2>
+
+            <input type="text" class="input-text" placeholder="Serch your favorite superheroe...">
+            <button type="submit" class="boton"> search</button>
+        </div>
+
+        <div class="sh-content">
+            <div class="sh-content-thumbnail">
+                <img src="/img/thumbnail-batman.jpg" alt="">
+            </div>
+
+            <div class="sh-list">
+
+                <div class="name">batman</div>
+
+                <div class="tabs-head">
+                    <button type="button" class="tab">
+                        <span>biography</span>
+                    </button>
+                    <button type="button" class="tab">
+                        <span>powerstats</span>
+                    </button>
+                    <button type="button" class="tab">
+                        <span>appearence</span>
+                    </button>
+                    <button type="button" class="tab">
+                        <span>conections</span>
+                    </button>
+                </div>
+
+                <!-- aqui comienza la seccion de biography -->
+                <ul class="tab-info biography">
+                    <li>
+                        <span>full name</span>
+                        <span>terry mcginnis</span>
+                    </li>
+                    <li>
+                        <span>alert-egos</span>
+                        <span>no alter egos found.</span>
+                    </li>
+                    <li>
+                        <span>aliases</span>
+                        <span>Batman II, The Tomorrow Knight, Batman Beyond</span>
+                    </li>
+                    <li>
+                        <span>place-of-birth</span>
+                        <span>Gothan City, 25th Century</span>
+                    </li>
+                    <li>
+                        <span>first-apperance</span>
+                        <span>Batman Beyond #1</span>
+                    </li>
+                    <li>
+                        <span>publisher</span>
+                        <span>DC Comics</span>
+                    </li>
+                </ul>
+
+                <!-- aqui comienza la seccion de powerstats -->
+                <ul class="tab-info powerstats">
+
+                </ul>
+
+                <!-- aqui inicia la seccion de appearance -->
+                <ul class="tab-info appearance">
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> gender
+                        </span>
+                        <span>Male</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> race
+                        </span>
+                        <span>human</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> height
+                        </span>
+                        <span>5' 10''</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> weight
+                        </span>
+                        <span>170 lb</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> eye-color
+                        </span>
+                        <span>blue</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-star"></i> hair-color
+                        </span>
+                        <span>black</span>
+                    </li>
+                </ul>
+
+                <!-- y por ultimo, la seccion de conenections -->
+                <ul class="tab-info connections">
+                    <li>
+                        <span>group--affiliation</span>
+                        <span>Batman Family, Justice League Unlimited</span>
+                    </li>
+                    <li>
+                        <span>relatives</span>
+                        <span>Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis
+                            (mother), Matt McGinnis (brother)</span>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </main>
 
     <script src="/superHeroAPI/app.js"></script>
 </body>

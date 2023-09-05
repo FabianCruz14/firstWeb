@@ -381,3 +381,49 @@ li {
    font-size: .7em;
    margin-top: .67rem;
 }
+
+.sh-content {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   -webkit-column-gap: 4rem;
+   -moz-column-gap: 4rem;
+   column-gap: 4rem;
+   margin-right: 2rem;
+   margin-top: 1em;
+}
+
+.sh-content-thumbnail {
+   width: 100%;
+   border-radius: 6px;
+   overflow: hidden;
+   margin-top: 0em;
+}
+
+.sh-list .name {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 3.5rem;
+   font-weight: 500;
+   margin-top: -1.2rem;
+}
+
+.powerstats {
+   display: none;
+}
+
+.powerstats li {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+   margin: 1.2rem auto;
+   padding: 1.2rem;
+   -webkit-box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.powerstats li div i {
+   color: var(--primario);
+}
