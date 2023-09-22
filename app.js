@@ -51,7 +51,7 @@ function showAlert(mensaje) {
 
     // esta alerta solo durara 3seg
     setTimeout(() => {
-        alert.remove();
+        alerta.remove();
     }, 3000);
 }
 
