@@ -304,6 +304,22 @@ li {
    color: var(--primario)
 }
 
+.error {
+   background-color: rgb(194, 23, 23);
+   text-align: center;
+   padding: 1rem;
+   color: var(--blanco);
+   text-transform: uppercase;
+}
+
+.correct {
+   background-color: var(--primario);
+   text-align: center;
+   padding: 1rem;
+   color: var(--blanco);
+   text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
    .contenedor-campos {
       display: grid;
