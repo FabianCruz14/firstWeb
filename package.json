@@ -1,0 +1,14 @@
+{
+  "name": "firstweb",
+  "version": "1.0.0",
+  "description": "pryecto con gulp, SASS y HTML",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FabianCruz14",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
