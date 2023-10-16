@@ -1,5 +1,5 @@
-$rojo: green;
+@import '/src/base/variables';
 
 body {
-    background-color: $rojo;
+    background-color: $bgcolor;
 }
