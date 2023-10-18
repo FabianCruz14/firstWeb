@@ -4,7 +4,8 @@
   "description": "pryecto con gulp, SASS y HTML",
   "main": "app.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css""tarea": "gulp tarea"
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea"
   },
   "author": "FabianCruz14",
   "license": "ISC",

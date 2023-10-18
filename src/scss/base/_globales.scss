@@ -1,0 +1,6 @@
+@use 'variables' as v;
+
+h1 {
+    text-align: center;
+    color: v.$blue;
+}
