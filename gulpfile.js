@@ -3,8 +3,8 @@ const sass = require("gulp-sass")(require("sass"));
 const plumber = require('gulp-plumber');
 
 function css(done) {
-    src("src/scss/**/*.scss") //Identifica el archivo SASS dentro de la carpeta src
-        .pipe(plumber())
+    src("src/scss/**/*.scss") //Identifica el archivo .SCSS a compilar
+        .pipe(plumber()) //añadimos un plumber, sirve para marcar error pero no para la compilacion
         .pipe(sass()) //lo compila
         .pipe(dest("build/css")); //almacenarla en el disco duro
 
