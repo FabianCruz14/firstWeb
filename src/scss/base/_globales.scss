@@ -1,6 +1,29 @@
 @use 'variables' as v;
 
-h1 {
-    text-align: center;
-    color: v.$blue;
+html {
+    // para que cada rem valga 10px debemos darle un fontsize de 62.5%
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$font;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 2 rem;
+    color: v.$skyblue;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120 rem;
+    margin: 0 auto;
 }
