@@ -6,13 +6,42 @@
 
     h1 {
         color: v.$white;
+        text-align: center;
+
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+
+    .contenido-header {
+        padding: 2rem;
+
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
 .nav-main {
+    @include m.tablet {
+        display: flex;
+        gap: 2rem;
+    }
+
     a {
+        // para que un contenido este solo en el reglon usamos un display: block;
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
         color: v.$white;
         font-size: 2.4rem;
+        margin-bottom: 1rem;
+
+        @include m.tablet {
+            margin: 0;
+        }
 
         &:hover {
             color: v.$yellow;
