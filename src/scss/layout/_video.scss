@@ -1,0 +1,59 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// seleccionamos el div del video para hacer que se encime con el titulo del festival
+// para hacerlo al video le aplicamos la posision relativa y al texto la absoluta
+.video {
+    position: relative;
+
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        // añadimos el degradado generado desde una pag web
+        background: rgb(18, 0, 255);
+        background: linear-gradient(90deg, rgba(18, 0, 255, 0.55) 0%, rgba(0, 212, 255, 0.3) 100%);
+        // le asignamos todo el espacio en el div
+        height: 100%;
+        width: 100%;
+
+        // con flexbox activamos las columas y centramos el contenido
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // a la etiqueta video le asignamos el 100 de ancho y bloqueamos el display
+    video {
+        width: auto;
+        display: block;
+
+        @include m.tablet {
+            width: 100%;
+
+        }
+    }
+}
+
+
+// al texto del video lo modificamos con la clase contenido-video y ahi seleccionamos el h2 y el p
+.contenido-video {
+    z-index: 1;
+
+    h2 {
+        color: v.$white;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p {
+        background-color: v.$backblue;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding: .7rem 1.5rem;
+        color: v.$white;
+        margin: 0;
+    }
+}
