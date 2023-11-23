@@ -386,12 +386,16 @@ h3 {
   font-size: 3rem;
 }
 
+image {
+  max-width: 100%;
+}
+
 .header {
   background-color: #5480b0;
 }
 .header h1 {
   color: #edf2fc;
-  text-align: center;
+  text-align: start;
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -473,4 +477,9 @@ h3 {
   padding: 0.7rem 1.5rem;
   color: #edf2fc;
   margin: 0;
+}
+
+.about-fest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

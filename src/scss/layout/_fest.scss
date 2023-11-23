@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about-fest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenido-fest {
+    h2 {}
+
+    .date {}
+}
