@@ -356,6 +356,7 @@ body {
 p {
   font-size: 2 rem;
   color: #5480b0;
+  line-height: 1.5;
 }
 
 .contenedor {
@@ -386,8 +387,9 @@ h3 {
   font-size: 3rem;
 }
 
-image {
+img {
   max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -480,6 +482,32 @@ image {
 }
 
 .about-fest {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .about-fest {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+.contenido-fest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .contenido-fest {
+    margin-top: 5rem;
+  }
+}
+.contenido-fest h2 {
+  margin-bottom: 2rem;
+  color: #204b5e;
+}
+.contenido-fest .date {
+  color: #26346c;
+  font-weight: 700;
 }

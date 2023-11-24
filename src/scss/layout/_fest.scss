@@ -2,13 +2,32 @@
 @use 'base/mixins' as m;
 
 .about-fest {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 0;
+
+    @include m.tablet {
+        @include m.grid (2, 3rem);
+    }
 
 }
 
 .contenido-fest {
-    h2 {}
+    // este codigo es para aliniar un div verticalmente
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
 
-    .date {}
+    @include m.tablet {
+        margin-top: 5rem;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+        color: v.$backblue;
+    }
+
+    .date {
+        color: v.$blue;
+        font-weight: 700;
+    }
 }
