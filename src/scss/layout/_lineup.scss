@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup {
+    background-color: v.$skyblue;
+    padding: 5rem 0;
+
+    h3,
+    p {
+        text-align: center;
+        color: $white;
+    }
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival</title>
+    <title>PsyTecno Fest</title>
 
     <!-- agregamos el link de la fuente, en este caso la extraimos de google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>Rock & EDM Fest </h1>
+            <h1>Psy & EDM Fest</h1>
 
             <nav class="nav-main">
                 <a href="#"> Line UP </a>
@@ -34,7 +34,7 @@
     <div class="video">
         <div class="overlay">
             <div class="contenedor contenido-video">
-                <h2>Rock & EDM Festival</h2>
+                <h2>Psy & EDM Fest</h2>
                 <p>April 2024, Puebla, México</p>
             </div>
         </div>
@@ -49,7 +49,16 @@
 
     <section class="contenedor about-fest">
         <div class="image">
-            <img src="/src/img/djOver.jpg" alt="Imagen Dj">
+
+
+
+            <picture>
+                <source srcset="/build/img/djOver.avif" type="image/avif">
+                <source srcset="/build/img/djOver.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="/build/img/djOver.jpg" alt="imagen djOver">
+                <!-- <img src="/build/img/djOver.jpg" alt="imagen djOver"> -->
+            </picture>
+
         </div>
         <div class="contenido-fest">
             <h2>Party Night by DjOver</h2>
@@ -65,6 +74,95 @@
                 lorem, quis consectetur mi mi ut elit.
             </p>
         </div>
+    </section>
+
+    <section class="lineup">
+        <h3 class="lup">Line Up</h3>
+
+        <p class="day">Friday 09</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario psy bg-blue">
+                <p class="nombre-escenario">Escenario Psy</p>
+                <ul class="calendar">
+                    <li>14:00 - <span>Astrix</span>
+                    </li>
+                    <li>15:00 - <span>Leezy San</span>
+                    </li>
+                    <li>16:00 - <span>Dooms Records</span>
+                    </li>
+                    <li>17:00 - <span>Vibrasphere</span>
+                    </li>
+                    <li>18:00 - <span>Astral Projection</span>
+                    </li>
+                    <li>19:00 - <span>Infected Mushroom</span>
+                    </li>
+                </ul>
+            </div> <!-- .escenario -->
+
+
+            <div class="escenario dark bg-skyblue">
+                <p class="nombre-escenario">Escenario Tecno</p>
+                <ul class="calendar">
+                    <li>14:00 - <span>Carl Cox</span>
+                    </li>
+                    <li>15:00 - <span>Richie Hawtin</span>
+                    </li>
+                    <li>16:00 - <span>Ellen Allien</span>
+                    </li>
+                    <li>17:00 - <span>Charlotte de Witte</span>
+                    </li>
+                    <li>18:00 - <span>Maya Jane Coles</span>
+                    </li>
+                    <li>19:00 - <span>St. Vincent</span>
+                    </li>
+                </ul>
+            </div> <!-- .escenario -->
+        </div> <!-- .escenarios-contenedor-->
+
+        <p class="day">Saturday 10</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario psy bg-blue">
+                <p class="nombre-escenario">Escenario Psy</p>
+                <ul class="calendar">
+                    <li>14:00 - <span>Vini Vici</span>
+                    </li>
+                    <li>15:00 - <span>Blastoyz</span>
+                    </li>
+                    <li>16:00 - <span>Ace Ventura</span>
+                    </li>
+                    <li>17:00 - <span>Interactive Noise</span>
+                    </li>
+                    <li>18:00 - <span>Astral Projection</span>
+                    </li>
+                    <li>19:00 - <span>Neelix</span>
+                    </li>
+                </ul>
+            </div> <!-- .escenario -->
+
+
+            <div class="escenario tecno bg-skyblue">
+                <p class="nombre-escenario">Escenario Tecno</p>
+                <ul class="calendar">
+                    <li>14:00 - <span>Tale Of Us</span>
+                    </li>
+                    <li>15:00 - <span>Dubfire</span>
+                    </li>
+                    <li>16:00 - <span>Ellen Allien</span>
+                    </li>
+                    <li>17:00 - <span>Miss Kittin</span>
+                    </li>
+                    <li>18:00 - <span>Marcel Dettmann</span>
+                    </li>
+                    <li>19:00 - <span>Marco Carola</span>
+                    </li>
+                </ul>
+            </div> <!-- .escenario -->
+        </div> <!-- .escenarios-contenedor-->
+
+
+
+
+
     </section>
 
 
