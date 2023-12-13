@@ -11,7 +11,7 @@ const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
 function css(done) {
-    src("src/scss/**/*.scss") //Identifica el archivo .SCSS a compilar
+    src('src/scss/**/*.scss') //Identifica el archivo .SCSS a compilar
         .pipe(plumber()) //añadimos un plumber, sirve para marcar error pero no para la compilacion
         .pipe(sass()) //lo compila
         .pipe(dest("build/css")); //almacenarla en el disco duro
@@ -51,14 +51,21 @@ function versionAvif(done) {
     done();
 }
 
-function dev(done) {
-    watch("src/scss/**/*.scss", css)
+function javascript(done) {
+    src('src/js/**/*.js')
+        .pipe(dest('build/js'));
+    done();
+}
 
+function dev(done) {
+    watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
     done();
 }
 
 exports.css = css;
+exports.js = javascript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel(imagenes, versionWebp, versionAvif, dev);
+exports.dev = parallel(imagenes, versionWebp, versionAvif, javascript, dev);
