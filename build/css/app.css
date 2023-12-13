@@ -520,7 +520,7 @@ img {
 }
 
 .lineup {
-  background-color: #5480b0;
+  background-color: #26346c;
   padding: 5rem 0;
 }
 .lineup h3,
@@ -539,4 +539,37 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
+}
+.escenarios-contenedor p {
+  color: #edf2fc;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario p::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2rem auto 0 auto;
+}
+
+.psy .nombre-escenario::after {
+  background-image: url(/build/img/icono_edm.png);
+}
+
+.tecno .nombre-escenario::after {
+  background-image: url(/build/img/icono_tecno.png);
+}
+
+.bg-blue {
+  background-color: rgb(33, 104, 179);
+}
+
+.bg-skyblue {
+  background-color: #5480b0;
 }

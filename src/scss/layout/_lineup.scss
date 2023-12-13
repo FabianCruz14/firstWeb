@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .lineup {
-    background-color: v.$skyblue;
+    background-color: v.$blue;
     padding: 5rem 0;
 
     h3,
@@ -26,4 +26,42 @@
         // en el primer tab elegimos el numero de columnas y en el segundo el ancho
         @include m.grid (2, 5rem);
     }
+
+    p {
+        color: v.$white;
+    }
+}
+
+.escenario {
+    padding-top: 2rem;
+
+    p {
+        &::after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+.psy .nombre-escenario::after {
+    background-image: url(/build/img/icono_edm.png);
+}
+
+.tecno .nombre-escenario::after {
+    background-image: url(/build/img/icono_tecno.png);
+}
+
+
+.bg-blue {
+    background-color: v.$bluemar;
+}
+
+.bg-skyblue {
+    background-color: v.$skyblue;
 }
