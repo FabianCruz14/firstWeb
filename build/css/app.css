@@ -523,3 +523,20 @@ img {
   background-color: #5480b0;
   padding: 5rem 0;
 }
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #edf2fc;
+}
+.lineup .day {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}

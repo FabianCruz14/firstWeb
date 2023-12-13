@@ -8,6 +8,22 @@
     h3,
     p {
         text-align: center;
-        color: $white;
+        color: v.$white;
+    }
+
+    .day {
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+}
+
+.escenarios-contenedor {
+
+    // el primer include llamamos al mixin para crear un mediaquery para la tablet
+    @include m.tablet {
+
+        // el sig include es para traer el mixin que hace columnas,
+        // en el primer tab elegimos el numero de columnas y en el segundo el ancho
+        @include m.grid (2, 5rem);
     }
 }

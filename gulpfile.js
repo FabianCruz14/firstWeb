@@ -20,6 +20,7 @@ function css(done) {
 
 }
 
+// creamos una funcion para usar el imagemin y reducir el tamaño de imagen
 function imagenes(done) {
     const opciones = {
         optimizationLevel: 3
