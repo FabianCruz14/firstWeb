@@ -35,7 +35,7 @@
 .escenario {
     padding-top: 2rem;
 
-    p {
+    .nombre-escenario {
         &::after {
             content: '';
             display: block;
@@ -60,8 +60,30 @@
 
 .bg-blue {
     background-color: v.$bluemar;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$bluemar, 10%);
+    }
 }
 
 .bg-skyblue {
     background-color: v.$skyblue;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$skyblue, 10%);
+    }
+}
+
+.calendar {
+    @include m.resetList;
+
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+
+        span {
+            font-weight: 400;
+        }
+
+    }
 }

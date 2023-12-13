@@ -547,7 +547,7 @@ img {
 .escenario {
   padding-top: 2rem;
 }
-.escenario p::after {
+.escenario .nombre-escenario::after {
   content: "";
   display: block;
   width: 20rem;
@@ -569,7 +569,26 @@ img {
 .bg-blue {
   background-color: rgb(33, 104, 179);
 }
+.bg-blue li:nth-child(odd) {
+  background-color: #194f88;
+}
 
 .bg-skyblue {
   background-color: #5480b0;
+}
+.bg-skyblue li:nth-child(odd) {
+  background-color: #42678f;
+}
+
+.calendar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendar li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendar li span {
+  font-weight: 400;
 }
