@@ -592,3 +592,33 @@ img {
 .calendar li span {
   font-weight: 400;
 }
+
+.galery {
+  padding: 5rem 0;
+}
+.galery h3 {
+  text-align: center;
+}
+
+.galery-images {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .galery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .galery-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
