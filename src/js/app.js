@@ -23,7 +23,7 @@ function createGalery() {
         `;
         // para que responda cuando le damos click a la miniatura debemos crear el 
         // sig callback
-        image.onclick = function (i) {
+        image.onclick = function () {
             showImage(i);
         }
         // agregamos la imagen a la galeria
@@ -39,7 +39,10 @@ function showImage(id) {
             <img loading="lazy" width="200" height="300" src="/build/img/grande/${id}.jpg" 
             alt="imageGalery">
     `;
-    const overlay = document.createElement('div');
+    const overlay = document.createElement('DIV');
     overlay.appendChild(image);
     overlay.classList.add('overlay');
+
+    const body = document.querySelector('body');
+    body.appendChild(image);
 }
