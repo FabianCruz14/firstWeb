@@ -39,10 +39,10 @@ function showImage(id) {
             <img loading="lazy" width="200" height="300" src="/build/img/grande/${id}.jpg" 
             alt="imageGalery">
     `;
-    const overlay = document.createElement('DIV');
+    const overlay = document.createElement('div');
     overlay.appendChild(image);
     overlay.classList.add('overlay');
 
     const body = document.querySelector('body');
-    body.appendChild(image);
+    body.appendChild(overlay);
 }
