@@ -21,7 +21,6 @@
 
     // el primer include llamamos al mixin para crear un mediaquery para la tablet
     @include m.tablet {
-
         // el sig include es para traer el mixin que hace columnas,
         // en el primer tab elegimos el numero de columnas y en el segundo el ancho
         @include m.grid (2, 5rem);
@@ -56,7 +55,6 @@
 .tecno .nombre-escenario::after {
     background-image: url(/build/img/icono_tecno.png);
 }
-
 
 .bg-blue {
     background-color: v.$bluemar;
