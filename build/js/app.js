@@ -1,7 +1,7 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     initApp();
 });
+
 
 // creamos la funcion que inicia la app y en ella llamamos a la funcion de crear la galeria
 // dentro de esta funcion estarán las demás para que la app interactue
@@ -42,7 +42,26 @@ function showImage(id) {
     const overlay = document.createElement('div');
     overlay.appendChild(image);
     overlay.classList.add('overlay');
+    overlay.onclick = function () {
+        const body = document.querySelector('body')
+        body.classList.remove('set-body')
+        overlay.remove();
+    }
+
+    const closeModal = document.createElement('p');
+    closeModal.textContent = 'x';
+    closeModal.classList.add('btn-close');
+
+    closeModal.onclick = function () {
+        const body = document.querySelector('body')
+        body.classList.remove('set-body')
+        overlay.remove();
+    }
+    overlay.appendChild(closeModal);
+
+
 
     const body = document.querySelector('body');
     body.appendChild(overlay);
+    body.classList.add('set-body');
 }

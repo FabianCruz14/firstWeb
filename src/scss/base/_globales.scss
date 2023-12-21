@@ -15,6 +15,10 @@ html {
 body {
     font-family: v.$font;
     font-size: 1.6rem;
+
+    &.set-body {
+        overflow: hidden;
+    }
 }
 
 p {
