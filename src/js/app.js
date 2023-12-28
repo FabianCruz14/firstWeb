@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
 // dentro de esta funcion estarán las demás para que la app interactue
 function initApp() {
     createGalery();
+    scrollNav();
+}
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.nav-main a')
+    enlaces.forEach(enlace => {
+
+    });
 }
 
 // en esta function, vamos a crear la galeria y la vamos a insertar en el documento,
