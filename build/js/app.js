@@ -12,6 +12,7 @@ function initApp() {
 function scrollNav() {
     const enlaces = document.querySelectorAll('.nav-main a')
     enlaces.forEach(enlace => {
+        enlace.addEventListener('click', () => statement)
 
     });
 }
