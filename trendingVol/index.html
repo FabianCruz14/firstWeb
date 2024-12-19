@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FchDev</title>
+    <!-- para normalizar nuestro diseño para usarlo con cualquier navegador, hay un hack;
+    usamos normailze para conseguir esto... creamos otro archivo css y pegamos todo el contenito -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <!-- agregamos la fuente para las letras, que fue extraida de google fonts
+    en este caso, se debe pegar el codigo del link que sale y el codigo de css  en la hoja de estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!-- para hacer que nuestra hoja de estilos se cargue más rapido, añadimos este codigo: -->
+    <link rel="preload" href="css/style.css" as="style">
+    <!-- usamos un link para referenciar el estilo de esta pagina -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="title">Fabián Cruz <span>freelancer</span> </h1>
+        </div>
+    </header>
+
+    <div class="nav-bg">
+        <!-- añadimos la etiqueta nav para agregar un menu de navegacion, a (anchor) es para referenciar un link -->
+        <nav class="navegacion-principal contenedor">
+            <!-- como el contenedor es limitado a 120rem o 1200px, este menú de navegacion solo se mostrará hasta 
+                dichas medidas y con los valores de la clase contenedor escritas en la stylesheet de css
+            -->
+            <a href="/index.html">Home</a>
+            <a href="#">About Me</a>
+            <!-- we change the follow link, proyects -->
+
+            <a href="/fest/index.html">Fest Proyect</a>
+            <a href="#">trendingVol BETA</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <main class="contenedor sombra">
+
+        <div class="image">
+            <picture>
+                <source srcset="/build/img/trendingVol.avif" type="image/avif">
+                <source srcset="/build/img/trendingVol.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="/build/img/trendingVol.jpg" alt="stat trandingVol">
+                <!-- <img src="/build/img/djOver.jpg" alt="imagen djOver"> -->
+            </picture>
+        </div>
+        <div class="about-app contendor">
+            <h2>trendingVol</h2>
+            <p class="description">
+                trendingVol is a new way to learn and analyze Voleyball.
+                simples clicks are enough to get the information and make 
+                graphs with the data. 
+                trendingVol also take this data and analyze a behavior of players and teams. 
+            </p>
+
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <p>All rights reserved. Fabian Cruz 2024</p>
+    </footer>
+
+    <script src=></script>
+
+</body>
+
+</html>
