@@ -68,3 +68,18 @@ function showError(mensaje) {
 
 
 
+const userAuth = new Promise ((resolve, reject) => {
+    const auth = true;
+
+    if (auth) {
+        resolve ('user autenticated');
+    }
+    else {
+        reject ('No sesion found');
+    }
+});
+
+userAuth
+    .then(results => alert(results))
+    .catch(error => alert(error));
+
